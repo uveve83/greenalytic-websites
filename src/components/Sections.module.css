@@ -73,7 +73,7 @@
 .dashImg { width: 100%; display: block; }
 .dashPlaceholder { display: none; height: 340px; align-items: center; justify-content: center; flex-direction: column; gap: 12px; color: var(--gray); }
 
-//* ── PARTNERS ── */
+/* ── PARTNERS ── */
 .partnersSection { padding: 56px 32px; }
 .partnersLabel { text-align: center; font-size: 13px; color: #000000; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; margin-bottom: 36px; }
 .partnersRow { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: center; }
