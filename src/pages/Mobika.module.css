@@ -8,14 +8,14 @@
 
 /* ── HERO ── */
 .hero {
-  background: linear-gradient(135deg, #0D1B3E 0%, #1a3a7c 55%, #0f2d6b 100%);
+  background: linear-gradient(135deg, #02250b 0%, #0d3d14 55%, #052002 100%);
   min-height: 92vh; display: flex; align-items: center;
   padding: 80px 32px; gap: 60px; flex-wrap: wrap;
   position: relative; overflow: hidden;
 }
 .hero::before {
   content: ''; position: absolute; inset: 0;
-  background: radial-gradient(ellipse at 70% 50%, rgba(59,130,246,0.15) 0%, transparent 60%);
+  background: radial-gradient(ellipse at 70% 50%, rgba(94,161,63,0.18) 0%, transparent 60%);
 }
 .heroInner { flex: 1; min-width: 300px; max-width: 600px; position: relative; z-index: 1; }
 
