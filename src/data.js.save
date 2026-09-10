@@ -108,11 +108,10 @@ export const PARTNERS = [
   { name: 'ICT Chamber',   logo: '/images/ICT.jpg' },
   { name: 'ESP',           logo: '/images/ESP.png' },
   { name: 'BENO',          logo: '/images/BENO.png' },
-{ name: 'Carnegie Mellon University', logo: '/images/Carnegie Mellon University CMU.jpg' },
+{ name: 'Carnegie Mellon University', logo: '/images/Carnegie Mellon.png' },
 ];
 
 // ── TESTIMONIALS ──────────────────────────────────────────
-
 export const TESTIMONIALS = [
   {
     initials: 'TM',

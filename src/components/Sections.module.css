@@ -73,16 +73,34 @@
 .dashImg { width: 100%; display: block; }
 .dashPlaceholder { display: none; height: 340px; align-items: center; justify-content: center; flex-direction: column; gap: 12px; color: var(--gray); }
 
-/* ── PARTNERS ── */
+//* ── PARTNERS ── */
 .partnersSection { padding: 56px 32px; }
 .partnersLabel { text-align: center; font-size: 13px; color: #000000; font-weight: 600; letter-spacing: 0.09em; text-transform: uppercase; margin-bottom: 36px; }
 .partnersRow { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; justify-content: center; }
-.partnerLogo { background: var(--white); border: 1.5px solid var(--border); border-radius: 12px; padding: 16px 28px; display: flex; align-items: center; justify-content: center; min-width: 140px; height: 70px; transition: box-shadow 0.2s, border-color 0.2s; }
+.partnersMarquee {
+  overflow: hidden;
+  width: 100%;
+  margin-top: 28px;
+  -webkit-mask-image: linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%);
+  mask-image: linear-gradient(to right, transparent 0, #000 8%, #000 92%, transparent 100%);
+}
+.partnersTrack {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: max-content;
+  animation: partnersScroll 28s linear infinite;
+}
+.partnersMarquee:hover .partnersTrack { animation-play-state: paused; }
+@keyframes partnersScroll {
+  from { transform: translateX(0); }
+  to   { transform: translateX(-50%); }
+}
+.partnerLogo { background: var(--white); border: 1.5px solid var(--border); border-radius: 12px; padding: 16px 28px; display: flex; align-items: center; justify-content: center; min-width: 140px; height: 70px; flex-shrink: 0; transition: box-shadow 0.2s, border-color 0.2s; }
 .partnerLogo:hover { box-shadow: var(--shadow-sm); border-color: var(--green); }
 .partnerLogo img { max-height: 38px; max-width: 110px; object-fit: contain; filter: grayscale(30%); transition: filter 0.2s; }
 .partnerLogo:hover img { filter: grayscale(0%); }
 .partnerLogo span { font-size: 13px; font-weight: 600; color: #000000; }
-
 /* ── TESTIMONIALS ── */
 .testiGrid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 44px; }
 .testiCard {

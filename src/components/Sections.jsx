@@ -158,7 +158,7 @@ export function Dashboard() {
   );
 }
 
-/* ── PARTNERS ───────────────────────────────────────────── */
+//* ── PARTNERS ───────────────────────────────────────────── */
 export function Partners() {
   const [ref, visible] = useInView();
   return (
@@ -167,21 +167,23 @@ export function Partners() {
         <p className={`${styles.partnersLabel} ${styles.reveal} ${visible ? styles.visible : ''}`}>
           Trusted by leading organisations in Rwanda
         </p>
-        <div className={`${styles.partnersRow} ${styles.reveal} ${visible ? styles.visible : ''}`}
+        <div className={`${styles.partnersMarquee} ${styles.reveal} ${visible ? styles.visible : ''}`}
           style={{ transitionDelay: '0.1s' }}>
-          {PARTNERS.map((p, i) => (
-            <div key={i} className={styles.partnerLogo}>
-              <img
-                src={p.logo}
-                alt={p.name}
-                onError={(e) => {
-                  e.target.style.display = 'none';
-                  e.target.nextSibling.style.display = 'block';
-                }}
-              />
-              <span style={{ display: 'none' }}>{p.name}</span>
-            </div>
-          ))}
+          <div className={styles.partnersTrack}>
+            {[...PARTNERS, ...PARTNERS].map((p, i) => (
+              <div key={i} className={styles.partnerLogo}>
+                <img
+                  src={p.logo}
+                  alt={p.name}
+                  onError={(e) => {
+                    e.target.style.display = 'none';
+                    e.target.nextSibling.style.display = 'block';
+                  }}
+                />
+                <span style={{ display: 'none' }}>{p.name}</span>
+              </div>
+            ))}
+          </div>
         </div>
       </div>
     </section>
