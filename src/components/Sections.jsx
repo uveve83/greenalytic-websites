@@ -139,7 +139,7 @@ export function Dashboard() {
 
           <div className={styles.dashImgWrap}>
             <img
-              src="/images/dashboard.jpeg"
+              src="/images/mobika-dashboard.jpg"
               alt="Greenalytic IoT Dashboard"
               className={styles.dashImg}
               onError={(e) => {
