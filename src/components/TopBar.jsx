@@ -17,7 +17,7 @@ export default function TopBar() {
           </span>
         </div>
         <div className={styles.socials}>
-          <a href="https://www.instagram.com/greenalytic_/" target="_blank" rel="noreferrer" aria-label="Instagram">
+          <a href="https://www.instagram.com/greenalytic_motors/" target="_blank" rel="noreferrer" aria-label="Instagram">
             <i className="fab fa-instagram" />
           </a>
           <a href="https://twitter.com/greenalytic" target="_blank" rel="noreferrer" aria-label="Twitter">

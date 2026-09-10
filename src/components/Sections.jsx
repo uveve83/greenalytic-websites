@@ -260,7 +260,7 @@ export function Footer() {
           <p>Clean mobility solutions built in Rwanda for Africa. Emissions monitoring, IoT fleet management, and zero-emission transport.</p>
           <div className={styles.footerSocials}>
             {[
-              { icon: 'fa-instagram', href: 'https://www.instagram.com/greenalytic_/' },
+              { icon: 'fa-instagram', href: 'https://www.instagram.com/greenalytic_motors/' },
               { icon: 'fa-twitter', href: 'https://twitter.com/greenalytic' },
               { icon: 'fa-whatsapp', href: 'https://wa.me/250796895138' },
               { icon: 'fa-facebook-f', href: '#' },
