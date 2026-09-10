@@ -1,0 +1,32 @@
+.hero {
+  position: relative;
+  background: linear-gradient(135deg, var(--green-dark) 0%, var(--green) 60%, #C17A3A 100%);
+  color: #fff; padding: 110px 32px 96px; text-align: center; overflow: hidden;
+}
+.hero::before {
+  content: ''; position: absolute; inset: 0;
+  background: url("data:image/svg+xml,%3Csvg width='80' height='80' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='40' cy='40' r='1.5' fill='rgba(255,255,255,0.04)'/%3E%3C/svg%3E") repeat;
+}
+.hero::after {
+  content: ''; position: absolute; bottom: -2px; left: 0; right: 0; height: 60px;
+  background: var(--white);
+  clip-path: ellipse(55% 100% at 50% 100%);
+}
+.heroGray::after { background: var(--gray-light); }
+.heroContent { position: relative; max-width: 720px; margin: 0 auto; }
+.heroLabel {
+  display: inline-flex; align-items: center; gap: 8px;
+  font-size: 12px; font-weight: 700; letter-spacing: 0.1em;
+  text-transform: uppercase; color: var(--accent); margin-bottom: 18px;
+}
+.heroLabel::before { content: ''; width: 20px; height: 2px; background: var(--accent); border-radius: 2px; }
+.heroTitle {
+  font-family: var(--font-head); font-size: clamp(2.4rem, 5.5vw, 4rem);
+  font-weight: 800; line-height: 1.08; margin-bottom: 20px; letter-spacing: -0.03em;
+  text-shadow: 0 2px 24px rgba(0,0,0,0.3);
+}
+.heroTitle span { color: var(--accent); }
+.heroSub {
+  font-size: 1.12rem; opacity: 0.84; max-width: 560px; margin: 0 auto;
+  line-height: 1.75; font-weight: 300;
+}

@@ -1,0 +1,49 @@
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --green:       #052002;
+  --green-light: #5ea13f;
+  --green-dark:  #02250b;
+  --green-pale:  #bcf7a1;
+  --accent:      #bbc9f5;
+  --charcoal:    #040620;        /* Updated: softer, more readable dark teal */
+  --text-muted:  #00020e;        /* NEW: for secondary text (descriptions, subtitles) */
+  --gray:        #7C6B5A;
+  --gray-light:  #FBF7F4;
+  --white:       #FFFFFF;
+  --border:      #ccedc8;
+  --font-head:   'Syne', sans-serif;
+  --font-body:   'DM Sans', sans-serif;
+  --radius:      14px;
+  --shadow:      0 8px 40px rgba(123,63,0,0.12);
+  --shadow-sm:   0 2px 16px rgba(123,63,0,0.08);
+}
+
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  color: var(--charcoal);
+  background: var(--white);
+  line-height: 1.7;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* NEW: Helper class for secondary / muted text */
+.text-muted {
+  color: var(--text-muted);
+}
+
+img { max-width: 100%; display: block; }
+a { color: inherit; text-decoration: none; transition: color 0.2s ease; }
+a:hover { color: var(--green-light); }
+ul { list-style: none; }
+button { cursor: pointer; font-family: var(--font-body); }
+
+/* ── ANIMATIONS ── */
+@keyframes kenBurns { from{background-size:112%} to{background-size:104%} }
+@keyframes fadeUp { from{opacity:0;transform:translateY(30px)} to{opacity:1;transform:translateY(0)} }
+@keyframes fadeIn { from{opacity:0} to{opacity:1} }
+@keyframes dotPulse { 0%,100%{opacity:1;transform:scale(1)} 50%{opacity:0.4;transform:scale(0.7)} }
+@keyframes float { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-8px)} }
+@keyframes shimmer { from{background-position:200% center} to{background-position:-200% center} }
