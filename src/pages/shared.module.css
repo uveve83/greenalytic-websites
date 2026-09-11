@@ -15,7 +15,6 @@
 .heroGray::after { background: linear-gradient(to bottom right, transparent 49%, var(--gray-light) 50%); }
 .heroContent { position: relative; max-width: 720px; margin: 0 auto; }
 .heroLabel { font-size: 12px; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; color: var(--accent); margin-bottom: 16px; display: inline-flex; align-items: center; gap: 8px; }
-.heroLabel::before { content: ''; display: inline-block; width: 24px; height: 2px; background: var(--accent); border-radius: 2px; }
 .heroTitle { font-family: var(--font-head); font-size: clamp(2.4rem, 5.5vw, 4.2rem); font-weight: 900; line-height: 1.08; margin-bottom: 20px; letter-spacing: -0.02em; text-shadow: 0 4px 20px rgba(0,0,0,0.3); }
 .heroTitle span { color: var(--accent); }
 .heroSub { font-size: 1.1rem; opacity: 0.88; max-width: 560px; margin: 0 auto; line-height: 1.75; font-weight: 300; }
