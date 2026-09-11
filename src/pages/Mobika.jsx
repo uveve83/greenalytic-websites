@@ -253,7 +253,7 @@ export default function Mobika() {
           <p className={styles.ctaSub}>One platform for mobility management, compliance, security, and financial visibility across Africa.</p>
           <div className={styles.ctaBtns}>
             <a href="https://mobika.africa" target="_blank" rel="noreferrer" className={styles.ctaWhite}>
-              Visit Mobika.rw →
+              Visit Mobika.africa →
             </a>
             <a href="/contact" className={styles.ctaOutline}>
               Talk to our team
