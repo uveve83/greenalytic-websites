@@ -91,7 +91,7 @@ export default function Mobika() {
               Mobika is an intelligent mobility management and compliance platform helping African vehicle owners, fleet operators, transport companies, and financial institutions manage vehicles, compliance, security, operations, and financial visibility — all from one platform.
             </p>
             <div className={styles.heroBtns}>
-              <a href="https://mobika.rw" target="_blank" rel="noreferrer" className={styles.btnPrimary}>
+              <a href="https://mobika.africa" target="_blank" rel="noreferrer" className={styles.btnPrimary}>
                 Visit Mobika Website →
               </a>
               <a href="/contact" className={styles.btnOutline}>
@@ -252,7 +252,7 @@ export default function Mobika() {
           <h2>Take control with Mobika.</h2>
           <p className={styles.ctaSub}>One platform for mobility management, compliance, security, and financial visibility across Africa.</p>
           <div className={styles.ctaBtns}>
-            <a href="https://mobika.rw" target="_blank" rel="noreferrer" className={styles.ctaWhite}>
+            <a href="https://mobika.africa" target="_blank" rel="noreferrer" className={styles.ctaWhite}>
               Visit Mobika.rw →
             </a>
             <a href="/contact" className={styles.ctaOutline}>

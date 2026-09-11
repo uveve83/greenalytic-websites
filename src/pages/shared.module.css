@@ -25,7 +25,6 @@
 .sectionGray { background: var(--gray-light); }
 .container { max-width: 1200px; margin: 0 auto; }
 .sectionLabel { font-size: 12px; font-weight: 600; letter-spacing: 0.12em; color: var(--brown); text-transform: uppercase; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
-.sectionLabel::before { content: ''; display: inline-block; width: 28px; height: 2px; background: var(--accent); border-radius: 2px; }
 .sectionTitle { font-family: var(--font-head); font-size: clamp(1.9rem, 3.5vw, 2.7rem); font-weight: 800; line-height: 1.15; color: var(--charcoal); margin-bottom: 16px; }
 .bodyText { color: var(--gray); margin-bottom: 16px; line-height: 1.82; font-size: 15.5px; }
 .sectionHeader { margin-bottom: 52px; }
